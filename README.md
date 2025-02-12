@@ -1,1 +1,1 @@
-# odin-recipes
+This is exercise in HTML coding. We will create basic recipes website.
