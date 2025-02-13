@@ -1,0 +1,10 @@
+.crveni {
+    color: red;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    height: auto;
+    width: 400px;
+    border-radius: 30px;
+}
