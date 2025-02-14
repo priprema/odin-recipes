@@ -1,10 +1,27 @@
-.crveni {
-    color: red;
+.ingredients, .instructions {
     font-family: Arial, sans-serif;
 }
+
+.ingredients {
+    color: red;
+    
+}
+.instructions {
+    color: green;
+}
+
+
 
 img {
     height: auto;
     width: 400px;
     border-radius: 30px;
+}
+
+h2.ingredients {
+    color: blue;
+}  
+
+ol.instructions {
+    color: purple;
 }
