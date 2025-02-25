@@ -16,6 +16,8 @@ img {
     height: auto;
     width: 400px;
     border-radius: 30px;
+    margin: 0 auto;
+    display: block;
 }
 
 h2.ingredients {
@@ -24,4 +26,55 @@ h2.ingredients {
 
 ol.instructions {
     color: purple;
+}
+
+.card {
+    width: 60%;
+    background-color: lightblue;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+
+}
+
+.description {
+    color: darkslategrey;
+}
+
+h1 {
+    color: darkslategrey;
+    text-align: center;
+}
+
+/*
+.button-link {
+    width: 80px;
+    height: 35px;
+    color: white;
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: medium;
+
+
+} */
+
+.button-link {
+    background-color: lightgreen;
+    width: auto;
+    font-weight: bold;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.button-link a {
+    text-decoration: none;
+    color: inherit;
 }
