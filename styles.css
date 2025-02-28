@@ -1,75 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default padding */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Darker text color */
+}
 .ingredients, .instructions {
     font-family: Arial, sans-serif;
 }
 
 .ingredients {
-    color: red;
-    
+    color: #a52a2a; /* Brownish-red */
+
 }
 .instructions {
-    color: green;
+    color: #006400; /* Dark Green */
 }
 
 h2 {
     margin: 0 auto 10px;
     text-align: center;
+    color: #2c3e50; /* Dark blue-gray */
 }
 
 img {
     height: auto;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 30px;
     margin: 0 auto;
     display: block;
 }
 
 h2.ingredients {
-    color: blue;
-}  
+    color: #000080; /* Dark blue */
+}
 
 ol.instructions {
-    color: purple;
+    color: #800080; /* Purple */
 }
 
 .card {
-    width: 60%;
-    background-color: lightblue;
+    max-width: 90%; /* Use most of the available width on mobile */
+    background-color: #e0f2f7; /* Lighter blue */
     padding: 15px;
     margin: 15px auto;
     border-radius: 15px;
     font-family: Arial, sans-serif;
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .description {
-    color: darkslategrey;
+    color: #2f4f4f; /* Dark gray */
 }
 
 h1 {
-    color: darkslategrey;
+    color: #2c3e50; /* Dark blue-gray */
     text-align: center;
+    margin-top: 20px;
 }
 
-/*
 .button-link {
-    width: 80px;
-    height: 35px;
-    color: white;
-    background-color: lightblue;
-    border: none;
-    color: black;
-    padding: 3px;
-    border-radius: 8px;
-    font-size: medium;
-
-
-} */
-
-.button-link {
-    background-color: lightgreen;
+    background-color: #90ee90; /* lightgreen */
     width: auto;
     font-weight: bold;
-    border: 2px solid purple;
+    border: 2px solid #800080; /* Purple */
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
@@ -83,14 +78,14 @@ h1 {
 }
 
 .glass-button {
-    padding: 12px 24px;
+    padding: 16px 28px; /* Bigger padding for touch */
     border: none;
     background: rgba(59, 130, 246, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1),
-                inset 0 2px 2px rgba(255, 255, 255, 0.4),
-                inset 0 -2px 2px rgba(0, 0, 0, 0.1);
+    inset 0 2px 2px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 2px rgba(0, 0, 0, 0.1);
     color: #1e40af;
     font-weight: 600;
     cursor: pointer;
@@ -119,4 +114,47 @@ h1 {
 
 .centered_button {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Larger base font size on mobile */
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading font sizes */
+        margin-bottom: 5px;
+    }
+
+    .card {
+        max-width: 95%; /* Even more width on very small screens */
+        padding: 10px;
+    }
+
+    .glass-button {
+        padding: 14px 26px;
+        font-size: 1em; /* Slightly larger button text */
+    }
+    .centered_button {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card img{
+        margin: 0 auto;
+        display: block;
+    }
+
 }
